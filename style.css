@@ -81,6 +81,7 @@ header p {
 header img {
   width: 100%;
   height: 30rem;
+  clip-path: circle();
 }
 
 button a {
@@ -216,39 +217,44 @@ textarea {
 
 .btn-form {
   background-color: var(--blackcolor);
+  cursor: pointer;
 }
 
-footer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 2rem 3rem;
+.socials {
+  margin-top: 1rem;
+  color: var(--whitecolor);
 }
 
 .socials a {
   margin: 0 0.5rem;
+  color: var(--whitecolor);
 }
 
-footer .about,
-.platforms {
-  display: flex;
-  flex-direction: column;
-}
-
-footer .contacts h3,
-.socials {
-  margin: 0.2rem 0;
+.socials .link {
+  display: inline-block;
 }
 
 .sub-footer {
-  background-color: var(--greycolor);
+  background-color: var(--primarycolor);
   text-align: center;
   padding: 1rem 0;
-  border-top: 1px solid var(--greycolor);
+  border-top: 1px solid var(--whitecolor);
+  color: var(--whitecolor);
 }
+
 @media (max-width: 1024px) {
   nav {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  nav a {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  nav h3 {
+    font-size: 1.5rem;
   }
 
   ul {
@@ -268,6 +274,7 @@ footer .contacts h3,
     position: absolute;
     top: 1.5rem;
     right: 1rem;
+    cursor: pointer;
   }
 
   .open {
@@ -280,6 +287,15 @@ footer .contacts h3,
 
   header {
     margin-top: 5rem;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -296,6 +312,10 @@ footer .contacts h3,
     transform: translateY(calc(-100% + 12.5rem));
   }
 
+  /* .portfolio-cta {
+    display: block;
+  } */
+
   .portfolio-cta {
     gap: 1.8rem;
   }
@@ -308,6 +328,10 @@ footer .contacts h3,
     padding: 0.4rem;
   }
 
+  .portfolio-projects {
+    grid-template-columns: 1fr;
+  }
+
   .portfolio-head,
   .portfolio-head-right {
     text-align: center;
@@ -318,9 +342,10 @@ footer .contacts h3,
     gap: 2rem;
   }
 
-  footer {
+  .form {
     gap: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  }
+  .btn-form {
+    font-size: 1.2rem;
   }
 }
