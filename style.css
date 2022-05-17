@@ -80,7 +80,7 @@ header p {
 
 header img {
   width: 100%;
-  height: 30rem;
+  height: 20rem;
   clip-path: circle();
 }
 
@@ -249,7 +249,6 @@ textarea {
   }
 
   nav a {
-    font-size: 2rem;
     font-weight: bold;
   }
 
@@ -312,12 +311,9 @@ textarea {
     transform: translateY(calc(-100% + 12.5rem));
   }
 
-  /* .portfolio-cta {
-    display: block;
-  } */
-
   .portfolio-cta {
-    gap: 1.8rem;
+    margin: 1rem 0;
+    gap: 2rem;
   }
 
   .portfolio-cta .btn-lg {
