@@ -314,12 +314,11 @@ textarea {
   }
 
   .portfolio-cta {
-    /* margin: 1rem; */
     gap: 2rem;
   }
 
   .portfolio-cta a {
-    margin: 1rem 1.5rem;
+    margin: 0.5rem;
   }
 
   .portfolio-cta .btn-lg {
