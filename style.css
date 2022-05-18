@@ -314,8 +314,12 @@ textarea {
   }
 
   .portfolio-cta {
-    margin: 1rem;
+    /* margin: 1rem; */
     gap: 2rem;
+  }
+
+  .portfolio-cta a {
+    margin: 1rem 0.5rem;
   }
 
   .portfolio-cta .btn-lg {
@@ -339,10 +343,6 @@ textarea {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-
-  /* .form {
-    gap: 2rem;
-  } */
 
   .form input,
   textarea {
